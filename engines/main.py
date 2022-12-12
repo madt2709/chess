@@ -1,8 +1,8 @@
 import chess
-from engines import random_move_generator
+from engines.random_engine import RandomEngine
 
 """
-A function to run the engine.
+A function to play against the engine. 
 """
 
 
@@ -33,7 +33,7 @@ def play_against_engine():
 
             board.push_san(user_move)
         else:
-            random_move_generator.make_random_move(board)
+            RandomEngine(board).make_move()
 
     # Print the final position and game over reason
     print(board)
