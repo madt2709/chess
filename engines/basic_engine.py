@@ -4,6 +4,7 @@ from search.minimax import Minimax
 from settings import DEPTH
 
 
+# uses only minimax + piece evaluation
 class BasicEngine(PieceEvaluation, Minimax):
     def make_move(self):
         score, pv = self.search(DEPTH)
