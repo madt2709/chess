@@ -3,7 +3,7 @@ import random
 
 
 class RandomEngine():
-    def __init__(self, board):
+    def __init__(self, board: chess.Board):
         self.board = board
 
     def make_move(self):
